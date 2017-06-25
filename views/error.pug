@@ -1,0 +1,11 @@
+extends ./layouts/layout
+
+block content
+  .container
+    .inner-wrapper
+      h1= message
+      h2= error.status
+      pre#error You are trying to access a page that does not exist. Please try again later or go back to the home page!
+      button.btn.ghost#error-btn GO BACK!
+block scripts
+  script(src='javascripts/error.js')

@@ -1,0 +1,13 @@
+extends ./layouts/layout
+
+block content
+  .container
+    h1.main-header Frequently Asked Questions
+    .inner-wrapper
+      #questions
+        ul
+          each faq, i in faqList
+            li#faq_list_item
+              p.faq_question #{faq.question}
+              p.faq_answer #{faq.answer}
+            hr

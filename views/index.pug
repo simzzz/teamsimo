@@ -1,0 +1,23 @@
+extends ./layouts/layout
+
+block content
+  #main-title
+    h1 Welcome to Team Simo!
+    h3 Official site of the legend himself!
+    .clear
+    button.btn.ghost#meme-button FREE MEMES!
+  #firsttime.modal
+  .modal-sandbox
+  .modal-box
+    .modal-header
+      .close-modal ✖
+      h1 FIRST TIME ON TEAM SIMO?
+    .modal-body
+      p
+        | It looks like you are visiting my site for the first time. Click the button below to register!
+      br
+      button.close-modal.btn-left.btn.ghost#close-button-ftv CLOSE
+      button.btn.ghost.btn-right#reg-button-ftv REGISTER
+
+block scripts
+  script(src='/javascripts/index.js')

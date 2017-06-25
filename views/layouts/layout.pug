@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Iceland', rel='stylesheet')        
+    link(rel='stylesheet', href='/stylesheets/style.css')    
+    block header
+  body
+    .wrapper
+      span.menu
+      .overlay
+       ul
+         li
+           a(href='/') Home
+         li
+           a(href='/gallery') Gallery
+         li
+           a(href='/faq') FAQ
+         li
+           a(href='/contact') Contact
+         li
+           a(href='/shop') Shop
+         br
+         block hiddenListElements 
+      block content
+      #footer
+        .container
+          .row
+            .col-md-6.col-l-6.col-xl-6.col-sm-6.col-xsm-6
+              #user-auth
+                btn.btn.ghost#register-btn REGISTER
+                btn.btn.ghost#log-in-btn LOG IN
+                btn.btn.ghost#sign-out-btn SIGN OUT            
+            .col-md-6.col-l-6.col-xl-6.col-sm-6.col-xsm-6
+              #social
+                a(href='https://www.youtube.com/user/RCSSTV')
+                  i.fa.fa-youtube
+                a(href='http://twitter.com/simaka__')
+                  i.fa.fa-twitter
+                a(href='http://instagram.com/simakamadafaka')
+                  i.fa.fa-instagram
+                a(href='http://facebook.com/simoebok')
+                  i.fa.fa-facebook
+      script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+      script(src='/javascripts/navbar.js')
+      script(src='/javascripts/main.js')              
+      block scripts      
